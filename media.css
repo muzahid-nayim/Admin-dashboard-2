@@ -1,0 +1,67 @@
+
+
+@media screen and (min-width: 850px) {
+    
+    #check:checked ~ main{
+        margin-left: 90px;
+    }
+
+   
+}
+
+
+
+@media screen and (min-width: 650px){
+    .card-container>div{
+        width: 50%;
+       
+    }
+    
+    .upper{
+        width: 49%;
+    }
+
+    .down{
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1140px){
+ .left{
+        width: 78%;
+    }
+    
+    .right{
+        width: 22%;
+        /* height: 100vh; */
+    }
+
+    .upper{
+        width: 100%;
+    }
+
+    .down{
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 800px){
+    .card-container>div{
+        width: 30%;
+       height: 280px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

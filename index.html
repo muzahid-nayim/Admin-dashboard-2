@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin dashboard 2</title>
+
+
+
+   
+    <script src="https://kit.fontawesome.com/6510686742.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    
+
+    <input type="checkbox" name="" id="check">
+    <label for="check"><i class="fa-solid fa-bars"></i></label>
+
+
+
+    <div class="sider ">
+            
+            <div class="hide-container  fcenter">
+                <label  for="check"><i id="hidebt" class="fa-solid fa-arrow-left"></i></label>
+            </div>
+
+
+            <div class="profile-image fcenter">
+                <img class="pro-img" src="/me.jpg" height="40px" width="40px" alt=""><br />
+                <h4>MNHP</h4>
+            </div>
+
+
+            <ul class="sider-ul  fcenter">
+                <li><a href="#"><i class="fa-brands fa-slack"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-wave-square"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-gauge"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
+
+    </div>
+
+
+
+    <main class=" flex">
+
+        <div class="left ">
+
+                <div class="header  flex">
+                    <div class="header-content">
+                        <div class="header-left  flex">
+                            <label for="search">
+                                <i id="" class="fa-solid fa-magnifying-glass"></i>
+                            </label>
+                            <input type="text" name="" id="search">
+
+                        </div>
+
+                        <div class="header-right  flex">
+                            <i class="fa-solid fa-bell"><sup>12</sup></i>
+                            <i onclick=" change_color();" class="fa-solid fa-moon"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="my-projects border flex">
+                        <div class="projects-content flex">
+                            <div class="mp">
+                                <h1>My projects</h1>
+                            </div>
+
+                            <span>My projects</span>op
+                        </div>
+                </div> -->
+
+
+
+                <div class="card-container  flex">
+
+                    <div class="card1-container  fcenter ">
+
+                        
+                            <div class="card1 card fcenter ">
+                                <div class="card-item ">
+                                    <h4>Grapics Design</h3>
+                                    <p id="active-p">1 hour ago</p>
+                                    <p id="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                                    <div class="card-bottom flex ">
+                                        <div class="image-section">
+                                            <img id="card-image" src="/pro-img.png"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+                                            <img id="card-image im1" src="/me.jpg"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+    
+                                        </div>
+    
+                                        <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                                    
+                    </div>
+
+                    <div class="card2-container   fcenter ">
+
+                        <div class="card2 card fcenter ">
+                            <div class="card-item ">
+                                <h4>Magazine</h3>
+                                <p id="active-p">2 hour ago</p>
+                                <p id="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                                <div class="card-bottom flex ">
+                                    <div class="image-section">
+                                        <img id="card-image" src="/pro-img.png"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+                                        <img id="card-image im1" src="/me.jpg"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+
+                                    </div>
+
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card3-container   fcenter">
+
+                        <div class="card3 card fcenter ">
+                            <div class="card-item ">
+                                <h4>Layouting</h3>
+                                <p id="active-p">Active now</p>
+                                <p id="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                                <div class="card-bottom flex ">
+                                    <div class="image-section">
+                                        <img id="card-image" src="/pro-img.png"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+                                        <img id="card-image im1" src="/me.jpg"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+
+                                    </div>
+
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card4-container   fcenter">
+
+                        <div class="card4 card fcenter ">
+                            <div class="card-item ">
+                                <h4>Guidelines</h3>
+                                <p id="active-p">1 day ago</p>
+                                <p id="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                                <div class="card-bottom flex ">
+                                    <div class="image-section">
+                                        <img id="card-image" src="/pro-img.png"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+                                        <img id="card-image im1" src="/me.jpg"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+
+                                    </div>
+
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card5-container  fcenter">
+
+                        <div class="card5 card fcenter ">
+                            <div class="card-item ">
+                                <h4>Branding</h3>
+                                <p id="active-p">5 hour ago</p>
+                                <p id="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                                <div class="card-bottom flex ">
+                                    <div class="image-section">
+                                        <img id="card-image" src="/pro-img.png"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+                                        <img id="card-image im1" src="/me.jpg"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+
+                                    </div>
+
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card6-container  fcenter">
+
+                        <div class="card6 card fcenter ">
+                            <div class="card-item ">
+                                <h4>Photoshoot</h3>
+                                <p id="active-p">30 munite ago</p>
+                                <p id="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                                <div class="card-bottom flex ">
+                                    <div class="image-section">
+                                        <img id="card-image" src="/pro-img.png"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+                                        <img id="card-image im1" src="/me.jpg"  style="border-radius: 50% ; border: 1px solid var( --sider-bg);" height="30px" width="30px" alt="">
+
+                                    </div>
+
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+        </div>
+
+
+
+
+
+
+        <div class="right  flex">
+
+
+            <div class="upper  fcenter">
+                <div class="sider-card  flex">
+                    <div class="sider-card-item flex">
+
+                        <h1 style="text-align: center; margin-top: 10px;">Total projects</h1>
+
+                        <div class="project-counter fcenter ">
+                            <h1 style="font-size: 55px;">85</h1>
+                        </div>
+
+                        <div>
+                            <h4 style="text-align: center;">3 completed</h4>
+                        <p style="text-align: center; font-size: 14px;color: var(--active); font-weight: 600;">from 5 projects</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="down  fcenter">
+                <div class="sider-card  flex">
+                    <div class="sider-card-item flex">
+
+                        <div class="down-list flex">
+                            <i class="fa-solid c1 fa-circle"></i>
+
+                                    <div class="down-list-text">
+                                        <h4>Grapics Design</h4>
+                                        <p id="active-p">By anonymous</p>
+                                    </div>
+
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+
+
+
+                                <div class="down-list flex">
+                                    <i class="fa-solid c2 fa-circle"></i>
+
+                                    <div class="down-list-text">
+                                        <h4>Magazine</h4>
+                                        <p id="active-p">By anonymous</p>
+                                    </div>
+                                    
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+
+
+
+                                <div class="down-list flex">
+                                    <i class="fa-solid c3 fa-circle"></i>
+
+                                    <div class="down-list-text">
+                                        <h4>Layouting</h4>
+                                        <p id="active-p">By anonymous</p>
+                                    </div>
+                                    
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+
+
+
+                                <div class="down-list flex">
+                                    <i class="fa-solid c4 fa-circle"></i>
+
+                                    <div class="down-list-text">
+                                        <h4>Guidelines</h4>
+                                        <p id="active-p">By anonymous</p>
+                                    </div>
+                                    
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+
+
+
+                                <div class="down-list flex">
+                                    <i class="fa-solid c5 fa-circle"></i>
+
+                                    <div class="down-list-text">
+                                        <h4>Branding</h4>
+                                        <p id="active-p">By anonymous</p>
+                                    </div>
+                                    
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+
+
+
+                                <div class="down-list flex">
+                                    <i class="fa-solid c6 fa-circle"></i>
+
+                                    <div class="down-list-text">
+                                        <h4>Photoshoot</h4>
+                                        <p id="active-p">By anonymous</p>
+                                    </div>
+                                    
+                                    <a href="#"><i style="font-size: 20px ; color: var(--color);" class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
