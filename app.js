@@ -4,9 +4,6 @@ console.log(root);
 let counter = true;
 
 
-
-
-
 let change_color =()=>{
 
     let property_set = (property_name,color)=>{
